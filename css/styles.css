@@ -1,0 +1,138 @@
+/* ===== Font ===== */
+    
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* ===== Page Layout ===== */
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #fb16c2e6 0%,
+        #eccd44f3 50%,
+        #1ff107 100%
+    );
+
+    color: #320562c0;
+    font-family: "Josefin Sans", sans-serif;
+
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 40px;
+}
+
+/* ===== Layout ===== */
+
+.page-layout {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+/* ===== Main Content ===== */
+
+.container {
+    flex: 3;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    border: 2px solid #ff66cc;
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 15px #ff66cc,
+        0 0 30px rgba(255, 102, 204, 0.35);
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 20px;
+}   
+
+
+.image-gallery {
+    text-align: center;
+    box-align: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+/* ===== Headings ===== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+    color: #9c8dc0a9;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    text-shadow: 0 0 4px rgba(38, 3, 141, 0.722);
+}
+
+h2 {
+    color: #66e6ff;
+
+    margin-top: 30px;
+
+    text-shadow: 0 0 4px rgba(102, 230, 255, 0.2);
+}
+
+/* ===== Text ===== */
+
+p {
+    color: #320562c0;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+strong {
+    color: #ff4747;
+}
+
+/* ===== Button ===== */
+
+button {
+    margin: 0 auto 30px auto;
+
+    color: rgb(0, 0, 0);
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 6px 8px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 6px rgba(255, 0, 136, 0.6);
+
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 18px rgba(4, 64, 103, 0.8),
+        0 0 30px rgba(1, 27, 15, 0.4);
+
+
+}

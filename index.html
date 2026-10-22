@@ -9,10 +9,10 @@
 </head>
 <body>
 
-    <div class="page-layout">
+<div class="page-layout">
 
-
-     <div class="container">
+    <div class="column">
+        <div class="container1">
             <div class="title-box">
             <h1>My Notes from Software Systems 110</h1>
             </div>
@@ -32,45 +32,58 @@
             <br>
                 In addition to preferring in-person class, I also prefer to take notes on paper. In something of an effort to bring myself into the modern era, I do have a notebook that allows me to easily scan my notes into a digital format.
             <br>
-                The specific ones I have can be found <a href="https://www.fivestarbuiltstrong.com/p/notebooks/spiral-notebooks/advance-spiral-notebook-1-subject-college-ruled-color-chosen-for-you-06322/">here</a>, though I cannot claim any brand loyalty. They were on mega clearance at Target. <span title="*...when they're not being homophobic">I love Target.* </span>
+                The specific ones I have can be found <a href="https://www.fivestarbuiltstrong.com/p/notebooks/spiral-notebooks/advance-spiral-notebook-1-subject-college-ruled-color-chosen-for-you-06322/" target="_blank" rel="noopener noreferrer">here</a>, though I cannot claim any brand loyalty. They were on mega clearance at Target. <span title="*...when they're not being homophobic">I love Target.* </span>
             </p>
+        </div>
+
+        <div class="container2">
+            <div class="title-box">
+            <h2>Portfolio Information</h2>
+            </div>
+            <p>
+                While I am still a student, I am working on growing my portfolio and professional prescence.
+                <br>
+                Here are links to my <a href="https://www.linkedin.com/in/irislmayer" target="_blank" rel="noopener noreferrer">LinkedIn</a> and my <a href="https://www.github.com/irislmayer" target="_blank" rel="noopener noreferrer">GitHub portfolio</a> where the files for this site as well as other projects can be found. 
+            </p>
+        </div>
     </div>
 
-    <div class="container">
+    <div class="container3">
         <div class="title-box">
                 <h3>My Notebook</h3>
-          </div> 
+        </div> 
                <p><center>The following are images of my notes from class so far.</center></p>
         
 
         <div class="image-gallery">
             <img id="image" src="images/shared_image.jpg" alt="one page of my notes, featuring sparse highlighting and my untidy scrawl" width="350" height="430">
-            <br>
             <button id="previousImgBtn">Previous Page</button>      <button id="nextImgBtn">Next Page</button>
         </div>
 
         <div class="title-box">
                 <h4>Feedback</h4>
         </div>
-                <p>
       
-                    <h5>Is the highlighting beautiful and worthwhile?</h5>
-                         <input type="checkbox" id="yesCheckbox1" onchange="toggleText('yesCheckbox1', 'text1')">Yes <p id="text1" style="display: none;">Thank you ^_^ </p>
+            <h5>Is the highlighting beautiful and worthwhile?</h5>
+                    <input type="checkbox" id="yesCheckbox1" onchange="toggleText('yesCheckbox1', 'text1')">Yes <p id="text1" style="display: none;">Thank you ^_^ </p>
                              <br>
-                         <input type="checkbox" id="yesCheckbox2" onchange="toggleText('yesCheckbox2', 'text2')">Yes <p id="text2" style="display: none;">Thank you, but a little bit more this time :D </p>
-                </p>
+                    <input type="checkbox" id="yesCheckbox2" onchange="toggleText('yesCheckbox2', 'text2')">Yes <p id="text2" style="display: none;">Thank you, but a little bit more this time :D </p>
+                
     
     
 
     </div>
 
 
+
 <dialog id="completeGalleryPopup">
-  <h3>Notes complete!</h3>
+  <center><h3>Notes complete!</h3></center>
   <p>You've reached the end of my notebook. The next page is back to Page 1. <br> 
     Don't want you to get caught in an infinite loop without realizing!</p>
-  <button id="closePopupBtn">Close</button>
+  <center><button id="closePopupBtn">Close</button></center>
 </dialog>
+</div>
+
 
 <script src="js/script.js"></script>
 </body>

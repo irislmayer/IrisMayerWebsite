@@ -1,5 +1,5 @@
 
-// Image Gallery functionality
+/* ===== Image Gallery Functionality ===== */
 const images = [
   'images/shared_image.jpg', 'images/img2.jpg', 'images/img3.jpg', 'images/img4.jpg', 
   'images/img5.jpg', 'images/img6.jpg', 'images/img7.jpg', 'images/img8.jpg', 
@@ -21,7 +21,7 @@ const image = document.getElementById('image');
 const popup = document.getElementById("completeGalleryPopup");
 const closePopupBtn = document.getElementById("closePopupBtn");
 
-// Pop-up 
+/* ===== Pop-up ===== */
 function triggerEndPopup() {
     setTimeout(() => {
         popup.showModal();
@@ -32,7 +32,7 @@ closePopupBtn.addEventListener('click', () => {
     popup.close();
 });
 
-// Buttons for navigating through the image gallery
+/* ===== Buttons for navigating Image Gallery ===== */
 previousImgBtn.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     image.src = images[currentIndex];
@@ -48,18 +48,19 @@ nextImgBtn.addEventListener('click', () => {
 });
 
 
-// Rainbow Effect on text
+/* ===== Rainbow Effect on text ===== */
 const prideEffect = document.querySelector("span");
 let hue = 0;
 
 function animatePride() {
-  hue = (hue + 1) % 360; // 
+  hue = (hue + 1) % 360;
   prideEffect.style.color = `hsl(${hue}, 100%, 50%)`; 
   requestAnimationFrame(animatePride);
 }
 
 animatePride();
 
+/* ===== Text reponses on checkbox ===== */
 function toggleText(checkboxId, textId) {
     var checkBox = document.getElementById(checkboxId);
     var textElement = document.getElementById(textId);
